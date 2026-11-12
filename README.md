@@ -6,19 +6,9 @@ Map mass-spectrometry peptides directly to eukaryotic genome assemblies, includi
 
 ## Install
 
-Requires Python 3.9 or newer. Linux and macOS are recommended.
-
 ```bash
-python -m pip install "git+https://github.com/qussai96/PepLocus.git"
+pip install peplocus
 ```
-
-Once published on PyPI:
-
-```bash
-python -m pip install peplocus
-```
-
-Dependencies are installed automatically; no external aligner is needed.
 
 ## Run
 
