@@ -1,0 +1,12 @@
+include README.md LICENSE
+recursive-include src/peplocus *.py
+prune tests
+prune docs
+prune scripts
+prune evaluation
+prune benchmarks
+prune test_carrot
+prune build
+prune dist
+prune .venv
+global-exclude __pycache__ *.py[cod]

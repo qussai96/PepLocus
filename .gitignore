@@ -1,0 +1,14 @@
+# Track only the distributable package and its public introduction.
+/*
+!/.gitignore
+!/README.md
+!/LICENSE
+!/MANIFEST.in
+!/pyproject.toml
+!/PepLocus.png
+!/src/
+/src/*
+!/src/peplocus/
+__pycache__/
+*.py[cod]
+*.egg-info/

@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=77.0.3", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "peplocus"
+version = "0.5.6"
+description = "Fast peptide-to-genome mapping with splice-junction support and one-edit rescue"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{name = "Qussai Abbas"}]
+keywords = ["proteogenomics", "peptides", "genome", "splicing", "BED12"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+dependencies = ["numpy>=1.23", "biopython>=1.80", "pyahocorasick>=2.0", "pysam>=0.22"]
+
+[project.urls]
+Homepage = "https://github.com/qussai96/PepLocus"
+Source = "https://github.com/qussai96/PepLocus"
+Issues = "https://github.com/qussai96/PepLocus/issues"
+
+[project.scripts]
+peplocus = "peplocus.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
